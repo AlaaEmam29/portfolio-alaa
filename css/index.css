@@ -446,10 +446,10 @@ article li {
   }
     .backist img{
       height: 150px !important; 
-      right: 2.1rem !important;   
+      right: 2.5rem !important;   
     }
-    .backist-width{
-      
+    .backist-width img{
+      right: 4.7rem !important;
       width: 140px !important;
     }
 .tags {
@@ -617,6 +617,7 @@ footer {
 
 /*  small screens (up to 768px) */
 @media screen and (max-width: 600px) {
+
   
     #projects-wrapper img {
       width: 100% !important;
@@ -626,19 +627,26 @@ footer {
 
     }
     
+
+    .backist-width{
+      right: 1rem ;
+    }
 }
 @media screen and (min-width: 601px) and (max-width: 769px) {
+
   
          #projects-wrapper img {
            width: 250px!important;
                 right: 0 !important;
                 margin-left: 4rem;
          }
-}
+                 
+        }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   body {
       width: 100vw;
       overflow-x: hidden;
+      min-height: 100vh;
     }
     #projects-wrapper{
       width: 95%;
@@ -657,5 +665,19 @@ footer {
                         width: 80%;
                           margin: auto;
                  }
+.div-content {
+  width: 95%;
+  margin: auto;
+}
+#projects-wrapper{
+  grid-template-columns: 1fr !important;
+  
+}
+#projects-wrapper > div {
+  width: 60%;
+position: relative;
+left: 50%;
+transform: translateX(-50%);
+}
 }
 
